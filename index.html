@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	
+	<TITLE>CALCULATOR</TITLE>
+	<meta name="viewport" content="user-scalable=no, width=device-width" />
+	<LINK REL="stylesheet" type="text/css" href="style.css" />
+	
+</HEAD>
+
+<body>
+	<div id="Body">
+	<div id="main" align="center">
+	<div id = "nav">
+		<!--<a href= "index.html">Calculator</a>
+		<a  href = "AgeCalculator.html">Age Calculator</a>
+		<a href="About.html">About</a>-->
+	</div>
+	
+	<div id = "Calculator">
+	<form>
+		<table>
+		<tr>
+			<td colspan="3">
+				<input type="text" id="textField" disabled/>
+			</td>
+			<td>
+				<input type="submit" id="submitButton" 
+				value="="/>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<input type="button" value="1" 
+				onClick="addToField(1)"/>
+			</td>
+			<td>
+				<input type="button" value="2" 
+				onClick="addToField(2)"/>
+			</td>
+			<td>
+				<input type="button" value="3" 
+				onClick="addToField(3)"/>
+			</td>
+			<td>
+				<input type="button" value="-" 
+				onClick="addToField('-')"/>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<input type="button" value="4" 
+				onClick="addToField(4)"/>
+			</td>
+			<td>
+				<input type="button" value="5" 
+				onClick="addToField(5)"/>
+			</td>
+			<td>
+				<input type="button" value="6" 
+				onClick="addToField(6)"/>
+			</td>
+			<td>
+				<input type="button" value="+" 
+				onClick="addToField('+')"/>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<input type="button" value="7" 
+				onClick="addToField(7)"/>
+			</td>
+			<td>
+				<input type="button" value="8" 
+				onClick="addToField(8)"/>
+			</td>
+			<td>
+				<input type="button" value="9" 
+				onClick="addToField(9)"/>
+			</td>
+			<td>
+				<input type="button" value="/" 
+				onClick="addToField('/')"/>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<input type="button" value="." 
+				onClick="addToField('.')"/>
+			</td>
+			<td>
+				<input type="button" value="0" 
+				onClick="addToField(0)"/>
+			</td>
+			<td>
+				<input type="button" value="Pi" 
+				onClick  = "addToField(3.141592653589793)"/>
+			</td>
+			<td>
+				<input type="button" value="*" 
+				onClick="addToField('*')"/>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<input type="button" value="x^2" 
+				onClick="power(2)"/>
+			</td>
+			<td>
+				<input type="button" value="x^3" 
+				onClick="power(3)"/>
+			</td>
+			<td>
+				<input type="button" value="10^x" 
+				onClick="powten()"/>
+			</td>
+			<td>
+				<input type="button" value="e" 
+				onclick = "addToField(2.718281828459045)"/>
+			</td>
+		</tr>
+		<tr>
+			<td >
+				<input type="button" value="sqrt" 
+				onClick="power(1/2)"/>
+			</td>
+			<td>
+				<input type="button" value="%" 
+				onClick="percentage()"/>
+			</td>
+			<td>
+				<input type="button" value="BKSP" 
+				onClick="backspace()"/>
+			</td>
+			<td>
+				<input type="reset" value="C" id  = "resetButton"/>
+			</td>
+		</tr>		
+		</table>
+	</form>
+	</div>
+		<div id="footer">An app devloped by <a href="https://twitter.com/bot_prashant">Sunny Jha</a> </div>
+	</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</HTML>
